@@ -1,0 +1,78 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'http://augus.github.io/ngAnimate/' ]
+2 info using npm@3.8.9
+3 info using node@v4.2.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData http://augus.github.io/ngAnimate/
+8 silly fetchOtherPackageData http://augus.github.io/ngAnimate/
+9 silly cache add args [ 'http://augus.github.io/ngAnimate/', null ]
+10 verbose cache add spec http://augus.github.io/ngAnimate/
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'http://augus.github.io/ngAnimate/',
+11 silly cache add   scope: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'http://augus.github.io/ngAnimate/',
+11 silly cache add   spec: 'http://augus.github.io/ngAnimate/',
+11 silly cache add   type: 'remote' }
+12 silly mapToRegistry name http://augus.github.io/ngAnimate/
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'http://augus.github.io/ngAnimate/',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: null,
+15 silly mapToRegistry   rawSpec: 'http://augus.github.io/ngAnimate/',
+15 silly mapToRegistry   spec: 'http://augus.github.io/ngAnimate/',
+15 silly mapToRegistry   type: 'remote' }
+16 silly mapToRegistry uri http://augus.github.io/ngAnimate/
+17 verbose addRemoteTarball http://augus.github.io/ngAnimate/ not in flight; adding
+18 verbose addRemoteTarball [ 'http://augus.github.io/ngAnimate/', null ]
+19 info retry fetch attempt 1 at 10:53:09 PM
+20 info attempt registry request try #1 at 10:53:09 PM
+21 http fetch GET http://augus.github.io/ngAnimate/
+22 verbose request id 189f3566c9c3fa29
+23 http fetch 200 http://augus.github.io/ngAnimate/
+24 silly fetchAndShaCheck shasum 4f3d90c9123e01cd8628cb293a402646d27bd7b5
+25 verbose addTmpTarball /var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/augus.github.io/ngAnimate not in flight; adding
+26 verbose correctMkdir /Users/nilesh/.npm correctMkdir not in flight; initializing
+27 verbose addTmpTarball validating metadata from /var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/augus.github.io/ngAnimate
+28 verbose tar unpack /var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/augus.github.io/ngAnimate
+29 verbose tar unpacking to /var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/unpack-93fb1e30
+30 silly gentlyRm /var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/unpack-93fb1e30 is being purged
+31 verbose gentlyRm don't care about contents; nuking /var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/unpack-93fb1e30
+32 silly gunzTarPerm modes [ '755', '644' ]
+33 error not a package /var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/augus.github.io/ngAnimate
+34 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/unpack-93fb1e30/package.json'
+34 silly fetchPackageMetaData     at Error (native)
+34 silly fetchPackageMetaData  error for http://augus.github.io/ngAnimate/ { [Error: ENOENT: no such file or directory, open '/var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/unpack-93fb1e30/package.json']
+34 silly fetchPackageMetaData   errno: -2,
+34 silly fetchPackageMetaData   code: 'ENOENT',
+34 silly fetchPackageMetaData   syscall: 'open',
+34 silly fetchPackageMetaData   path: '/var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/unpack-93fb1e30/package.json' }
+35 silly rollbackFailedOptional Starting
+36 silly rollbackFailedOptional Finishing
+37 silly runTopLevelLifecycles Starting
+38 silly runTopLevelLifecycles Finishing
+39 silly install printInstalled
+40 verbose stack Error: ENOENT: no such file or directory, open '/var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/unpack-93fb1e30/package.json'
+40 verbose stack     at Error (native)
+41 verbose cwd /Applications/MAMP/htdocs/image-slider
+42 error Darwin 15.4.0
+43 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "http://augus.github.io/ngAnimate/"
+44 error node v4.2.4
+45 error npm  v3.8.9
+46 error path /var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/unpack-93fb1e30/package.json
+47 error code ENOENT
+48 error errno -2
+49 error syscall open
+50 error enoent ENOENT: no such file or directory, open '/var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/unpack-93fb1e30/package.json'
+51 error enoent ENOENT: no such file or directory, open '/var/folders/rj/29mgb4sj3nn5lbwtzy8kj0fm0000gn/T/npm-4216-8435e45e/unpack-93fb1e30/package.json'
+51 error enoent This is most likely not a problem with npm itself
+51 error enoent and is related to npm not being able to find a file.
+52 verbose exit [ -2, true ]

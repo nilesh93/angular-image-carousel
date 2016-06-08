@@ -1,0 +1,66 @@
+<html lang="en" ng-app="slider">
+    <head>
+        <meta charset="utf-8">
+        <title>Angular-slider</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="http://bootswatch.com/paper/bootstrap.min.css" media="screen">
+        <link rel="stylesheet" href="css/custom-css.css" media="screen">
+        <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+
+
+    </head>
+    <body  class="body-style" ng-controller="SliderController as sc">
+
+
+
+        <div class="container">
+
+            <div class="row" style="padding-top:10%">
+
+                <div class="col-md-1">
+                    <button class="btn btn-default btn-center" ng-click="sc.prev()">Prev</button>
+
+                </div><!-- animated fadeInRight -->
+                <div class="col-md-3" ng-repeat=" x in sc.imgArr" ng-hide="($index!=sc.view.first && $index!= sc.view.second && $index!= sc.view.third)" ng-class="($index == sc.view.third)?'':''">
+
+                    <div class="panel panel-default">
+
+                        <div class="panel-body">
+
+                            <img class="img-responsive img-center" style=""  align="middle"  ng-src="{{x.path}}">
+                              <h6><center>{{x.desc}}</center></h6>
+
+                        </div>
+                      
+                    </div>
+
+                </div>
+
+                <div class="col-md-1">
+                    <button class="btn btn-default btn-center"  ng-click="sc.next()">Next</button>
+
+                </div>
+
+            </div>
+            <div class="row">
+                
+                <center>
+                    <button class="btn   btn-margin" ng-repeat="x in sc.buttons" ng-click="sc.switch($index)" ng-class="sc.classVal==$index?'btn-primary':'btn-default'"></button>
+                   
+                    
+                </center>
+                
+            </div>
+
+
+        </div>
+
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-animate/angular-animate.js"></script>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>
