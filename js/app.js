@@ -71,7 +71,7 @@
         };
 
         //set the micro seconds for the interval
-        self.interval = 3000;
+        self.interval = 1000;
 
         //init buttons array
         self.buttons = [];
@@ -231,7 +231,7 @@
             $interval(function(){
 
                 //self.classVal;
-                var val =  Math.floor(self.view.third/3);
+                var val =  Math.floor(self.view.second/3);
 
                 
                 var divFactor = (val%3 == 0)?true:false;
